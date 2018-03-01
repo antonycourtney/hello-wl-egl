@@ -1,0 +1,16 @@
+[package]
+name = "hello_wl_egl"
+version = "0.1.0"
+authors = ["antony"]
+
+[dependencies]
+byteorder = "1.0"
+tempfile = "2.0"
+memmap = "0.6"
+wayland-window = { version = "0.13.2" }
+wayland-client = { version = "0.12.0", features = ["cursor"] }
+wayland-protocols = { version = "0.12.0", features = ["client", "unstable_protocols"] }
+
+[dev-dependencies]
+
+wayland-client = { version = "0.12.0", features = ["cursor", "dlopen"] }
